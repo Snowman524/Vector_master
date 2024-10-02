@@ -14,7 +14,7 @@ nom = "7.1.3"
 num_enum = "0.7.3"
 prost = "0.12"
 prost-types = "0.12"
-snafu = { version = "0.7" }
+snafu = { version = "0.8" }
 vector-common = { path = "../vector-common", features = ["btreemap"] }
 
 [build-dependencies]
