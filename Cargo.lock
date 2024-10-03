@@ -5463,15 +5463,25 @@ dependencies = [
 ]
 
 [[package]]
-name = "metrics-tracing-context"
-version = "0.15.0"
+name = "metrics"
+version = "0.23.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fb791d015f8947acf5a7f62bd28d00f289bb7ea98cfbe3ffec1d061eee12df12"
+checksum = "884adb57038347dfbaf2d5065887b6cf4312330dc8e94bc30a1a839bd79d3261"
+dependencies = [
+ "ahash 0.8.11",
+ "portable-atomic",
+]
+
+[[package]]
+name = "metrics-tracing-context"
+version = "0.16.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "62a6a1f7141f1d9bc7a886b87536bbfc97752e08b369e1e0453a9acfab5f5da4"
 dependencies = [
  "indexmap 2.5.0",
  "itoa",
  "lockfree-object-pool",
- "metrics",
+ "metrics 0.23.0",
  "metrics-util",
  "once_cell",
  "tracing 0.1.40",
@@ -5481,16 +5491,16 @@ dependencies = [
 
 [[package]]
 name = "metrics-util"
-version = "0.16.3"
+version = "0.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8b07a5eb561b8cbc16be2d216faf7757f9baf3bfb94dbb0fae3df8387a5bb47f"
+checksum = "4259040465c955f9f2f1a4a8a16dc46726169bca0f88e8fb2dbeced487c3e828"
 dependencies = [
  "aho-corasick",
  "crossbeam-epoch",
  "crossbeam-utils",
  "hashbrown 0.14.5",
  "indexmap 2.5.0",
- "metrics",
+ "metrics 0.23.0",
  "num_cpus",
  "ordered-float 4.3.0",
  "quanta",
@@ -10443,7 +10453,7 @@ dependencies = [
  "lru",
  "maxminddb",
  "md-5",
- "metrics",
+ "metrics 0.22.3",
  "metrics-tracing-context",
  "mlua",
  "mongodb",
@@ -10574,7 +10584,7 @@ dependencies = [
  "futures 0.3.30",
  "hdrhistogram",
  "memmap2",
- "metrics",
+ "metrics 0.22.3",
  "metrics-tracing-context",
  "metrics-util",
  "num-traits",
@@ -10613,7 +10623,7 @@ dependencies = [
  "derivative",
  "futures 0.3.30",
  "indexmap 2.5.0",
- "metrics",
+ "metrics 0.22.3",
  "nom",
  "ordered-float 4.3.0",
  "paste",
@@ -10716,7 +10726,7 @@ dependencies = [
  "hyper-proxy",
  "indexmap 2.5.0",
  "ipnet",
- "metrics",
+ "metrics 0.22.3",
  "metrics-tracing-context",
  "metrics-util",
  "mlua",
